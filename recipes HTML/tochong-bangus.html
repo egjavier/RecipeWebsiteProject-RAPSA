@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/landing-page.css">
+  <link rel="stylesheet" href="../styles/section2.css">
+  <link rel="stylesheet" href="../styles/section3.css">
+  <link rel="stylesheet" href="../styles/section4.css">
+  <link rel="stylesheet" href="../styles/section5.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html" title="Recipe Website Project">RAPSA</a>
+      <ul class="tabs-container">
+        <li  class="navbar-tabs"><a class="navbar-tabs home" href="../index.html">Home</a></li>
+        <li class="navbar-tabs"><a id="categories" class="navbar-tabs" href="../categories.html">Categories</a></li>
+        <li class="navbar-tabs"><a id="about" class="navbar-tabs" href="../about.html">About</a></li>
+        <li class="navbar-tabs"><a id="about" class="navbar-tabs" href=" " onclick="popUp()">Community</a></li>
+        <div class="search-container">
+          <input  placeholder="Search recipe"  type="search">
+          <a id="search" class="search-button" href=" " role="button" onclick="popUp()">Search</a>        
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <div id="recipe-body">
+    <div id="recipe-container" class="container">
+      <div class="recipe-title-container" >
+      <h1 class="recipe-title food">TOCHONG BANGUS</h1>
+      <h4 class="recipe-title "><a class="chef" target="_blank" href="https://www.youtube.com/@KuyaFernsCooking">
+        Kuya Fern's Cooking
+      </a></h4>
+      </div> <br>
+
+      <div class="recipe-info-container">
+        <div class="ingredients-container">
+          <h5 class="recipe-info">INGREDIENTS:</h5>
+          <ul>
+            <li>oil</li>
+            <li>270g tofu sliced into cubes</li>
+            <li>1 1/4 kg milkfish (bangus)</li>
+            <li>salt and pepper</li>
+            <li>2 chopped onions</li>
+            <li>8 cloves chopped garlic</li>
+            <li>Ginger (sliced)</li>
+            <li>2 chopped red tomatoes</li>
+            <li>100g strained salted black beans (tausi)</li>
+            <li>80g mashed tahure (fermented bean curd)</li>
+            <li>1 tbsp oyster sauce</li>
+            <li>1 tbsp soy sauce</li>
+            <li>3 cups water (add more as needed)</li>
+            <li>3-4 tbsp light brown sugar (depending on preferred sweetness)</li>
+            <li>1 1/2 tbsp vinegar</li>
+            <li>slurry (1Tbsp cornstarch dissolved in 1Tbsp water)</li>
+          <div class="comment-section" style="margin-right: 20px;">
+            <h5>HOW WAS IT?</h5>
+            <form action="#">
+              <label for="fname">NAME</label>
+              <br>
+              <input type="text" class="box name" name="firstname" placeholder="Type your name here...">
+              <br><br>
+              <label for="subject">Comment</label> <br>
+              <textarea id="subject" class="box comment" placeholder="Write something.."></textarea>
+              <br><br>
+              <button href="#" class="search-button submit" onclick="showPopup()">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="instruction-container">
+          <a href="https://www.youtube.com/watch?v=PstpBUdQ4QA&t=2s" target="_blank">
+          <img title="See Video"  class="meal-pic" src="../images/totchongBangus.avif" alt="tochong-bangus image"> 
+          </a> <br><br>
+          <h5 class="recipe-info">INSTRUCTION:</h5>
+          <ol>
+            <li>Heat the oil up for deep frying.</li>
+            <li>Deep fry the tofu. Set aside.</li>
+            <li>Put Bangus in a bowl, salt and mix.</li>
+            <li>To the same oil, fry the fish. Once fried, Set aside.</li>
+            <li>On a different pan with oil, saute onions on high flame for about 20sec.</li> 
+            <li>Add the garlic and continue sauteing for 10mins.</li>
+            <li>Add ginger and saute for 30sec.</li>
+            <li>Add tomatoes until mashed.</li>
+            <li>Add the stained tausi saute for another 30sec.</li>
+            <li>Add tahure and continue to saute on medium flame.</li>
+            <li>Add oyster sauce and soy sauce.</li>
+            <li>Once reduced, add water. Deglaze the pan.</li> 
+            <li>Add pepper, sugar and vinegar. Cook fro about 8 minutes or until the vinegar taste milder.</li>
+            <li>Add the slurry.</li>
+            <li>Once the sauce is thicker, add the fried bangus. Cook for about 3-5 minutes on low flame.</li>
+            <li>Flip the fish to the other side.</li>
+            <li>Add fried tofu. Mix gently and turn off the flame. Enjoy.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function popUp() {
+      alert(`
+      I apologize. This page is still under construction. 
+  
+      Thank you for understanding.
+  `);
+    }
+    function emailNotAvailble() {
+      alert(`
+      I apologize. This page is still under construction.
+
+      But you can email me at yunisjavier@yahoo.com.
+  
+      Thank you for understanding.
+  `);
+    }
+  </script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function showPopup() {
+    alert(`
+    I apologize. I am currently working on adding a comment section on the website.
+
+    In the meantime, please click on the Food image to leave your thoughts about the recipe. 
+
+    Thank you.
+`);
+  }
+</script>
+</body>

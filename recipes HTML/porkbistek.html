@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/landing-page.css">
+  <link rel="stylesheet" href="../styles/section2.css">
+  <link rel="stylesheet" href="../styles/section3.css">
+  <link rel="stylesheet" href="../styles/section4.css">
+  <link rel="stylesheet" href="../styles/section5.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html" title="Recipe Website Project">RAPSA</a>
+      <ul class="tabs-container">
+        <li  class="navbar-tabs"><a class="navbar-tabs home" href="../index.html">Home</a></li>
+        <li class="navbar-tabs"><a id="categories" class="navbar-tabs" href="../categories.html">Categories</a></li>
+        <li class="navbar-tabs"><a id="about" class="navbar-tabs" href="../about.html">About</a></li>
+        <li class="navbar-tabs"><a id="about" class="navbar-tabs" href=" " onclick="popUp()">Community</a></li>
+        <div class="search-container">
+          <input  placeholder="Search recipe"  type="search">
+          <a id="search" class="search-button" href=" " role="button" onclick="popUp()">Search</a>        
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <div id="recipe-body">
+    <div id="recipe-container" class="container">
+      <div class="recipe-title-container" >
+      <h1 class="recipe-title food">PORK STRIPS BISTEK</h1>
+      <h4 class="recipe-title "><a class="chef" target="_blank" href="https://www.youtube.com/@KuyaFernsCooking">
+        Kuya Fern's Cooking
+      </a></h4>
+      </div> <br>
+
+      <div class="recipe-info-container">
+        <div class="ingredients-container">
+          <h5 class="recipe-info">INGREDIENTS:</h5>
+          <ul>
+            <li>Oil</li>
+            <li>2 chopped onions (white or red)</li>
+            <li>1 head chopped garlic</li>
+            <li>1 1/2 kg Pork belly sliced into strips</li>
+            <li>5 tbsp soy sauce</li>
+            <li>5 tbsp oyster sauce</li>
+            <li>Water enough to submerge the meat</li>
+            <li>5 tbsp calamansi juice</li>
+            <li>Red onion cut into rings</li>
+            <li>Salt and pepper</li>
+          </ul>
+
+          <div class="comment-section">
+            <h5>HOW WAS IT?</h5>
+            <form action="#">
+              <label for="fname">NAME</label>
+              <br>
+              <input type="text" class="box name" name="firstname" placeholder="Type your name here...">
+              <br><br>
+              <label for="subject">Comment</label> <br>
+              <textarea id="subject" class="box comment" placeholder="Write something.."></textarea>
+              <br><br>
+              <button href="#" class="search-button submit" onclick="showPopup()">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="instruction-container">
+          <a href="https://www.youtube.com/watch?v=fNMe8p8ANPQ&t=4s" target="_blank">
+          <img title="See Video"  class="meal-pic" src="../images/porkStripsBistek.avif" alt="PORK STRIPS BISTEK image"> 
+          </a> <br><br>
+          <h5 class="recipe-info">INSTRUCTION:</h5>
+          <ol>
+            <li>On a hot pan put some oil and saute the chopped onions on high flame for about 20sec.</li>
+            <li>Add the garlic  amd continue sauteing for another 10sec.</li>
+            <li>Add all the sliced pork belly and continue sauteing.</li>
+            <li>Once a little brown, add salt and pepper.</li>
+            <li>Continue to sauteing and let the fat render.</li>
+            <li>Once you see the tost marks on the meat, add the soy sauce and oyster sauce.</li>
+            <li>Add enough water to submerge the meat once the soy sauce and oyster sauce are reduced and you see more fat being rendered.</li>
+            <li>Deglaze the pan. (srcape the tosted sauce on the side of the pan and encorporate it into the water)</li>
+            <li>Add calamansi juice and bay leaves. Cover.</li>
+            <li>Once boiling, set the flame to low and slow cook.</li>
+            <li>When the meat is soft and tender, Empty the pan. (separate the meat from the sauce.)</li>
+            <li>On the same pan, put a spoon of the sauce and a little bit of oil.</li>
+            <li>Put the meat back and saute on a mideum high heat.</li>
+            <li>Continue pan frying. Add sauce when needed.</li>
+            <li>After pan fying, add the remaining sauce back. set to low flame and mix.</li>
+            <li>Top with red onion rings. Mix and cover.</li>
+            <li>Turn off the flame when the sauce is reduced. Enjoy!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function popUp() {
+      alert(`
+      I apologize. This page is still under construction. 
+  
+      Thank you for understanding.
+  `);
+    }
+    function emailNotAvailble() {
+      alert(`
+      I apologize. This page is still under construction.
+
+      But you can email me at yunisjavier@yahoo.com.
+  
+      Thank you for understanding.
+  `);
+    }
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function showPopup() {
+    alert(`
+    I apologize. I am currently working on adding a comment section on the website.
+
+    In the meantime, please click on the Food image to leave your thoughts about the recipe. 
+
+    Thank you.
+`);
+  }
+</script>
+</body>

@@ -1,0 +1,22 @@
+.about-page{background-color: antiquewhite;}
+#about-pic{
+  float: right;
+  margin-top: 40px;
+}
+.about-container{
+  padding: 40px 100px;
+  width: 100vw;
+  background-color: whitesmoke;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.about-content{
+  font: 600 18px roboto condensed;
+  color: #630a10;
+  text-align: center;
+}
+.brand-name{font: 700 25PX Righteous;}
+#email-me{text-decoration: none; color: red;}
+#email-me:hover{color: #630a10;}

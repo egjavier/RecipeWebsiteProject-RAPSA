@@ -1,0 +1,94 @@
+.landing-page{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  position: relative;
+}
+.overlay{
+  background-color: black;
+  position: absolute; 
+  top: 0;
+  opacity: 0.58;
+}
+.boodle-fight{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  object-position: 0 -145px;
+  object-fit: cover;
+}
+.rapsa{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+.brand{
+  color: transparent;
+  text-shadow: 3px -2px 1px #FACE7F, -3px 2px 1px #FCF0C8;
+  font: 900 8rem Righteous;
+}
+.big{
+  font-size: 40px;
+  color: whitesmoke;
+  text-decoration: underline;
+  line-height: 50px;
+}
+.landing-page p {
+  color: white;
+  font: 400 20px Roboto Condensed;
+  line-height: 30px;
+  text-align: center;
+}
+.call-to-action{
+  font: 500 3rem Bebas Neue;
+  border: 15px solid #911F27;
+  padding: 10px 20px;
+}
+.nav{ 
+  position: absolute;
+  padding: 5px 10px;
+  top: 10px;
+  left: 0;
+  display: flex;
+  width: 100vw;
+}
+.tab{
+  padding: 0 10px;
+  text-decoration: none;
+  font: 500 20px Bebas Neue;
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+@media (max-width: 885px){
+  .nav{
+    margin-top: 5%;
+    justify-content: center;
+  }
+  .brand{font: 900 5rem Righteous;}
+  .big{
+    font-size: 21px;
+    line-height: 50px;
+  }
+  .landing-page p {
+    font: 400 17px Roboto Condensed;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .call-to-action{
+    font: 500 2rem Bebas Neue;
+    border: 10px solid #911F27;
+  }
+}

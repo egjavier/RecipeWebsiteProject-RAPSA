@@ -1,0 +1,86 @@
+.title, .subtitle{
+  text-align: center;
+  margin-bottom: 0;
+}
+.title{
+  font: 700 2rem Bebas Neue; 
+  color: #630A10;
+}
+.subtitle{
+  font: 500 20px Roboto Condensed; 
+  color: #911F27;
+}
+.row{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.card {
+  box-shadow: 5px 10px 10px black;
+  height: 50vh;
+  width:100%
+}
+.card-img-top{
+  object-fit: cover;
+  border-radius: 0;
+}
+.card-title{
+  font: 900 18px Roboto Condensed;
+  color: #630A10;
+  margin-top: 10px;
+}
+.card-body{
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card-text{
+  text-align: center; 
+  font: 400 13px Roboto Condensed;
+}
+.section2{
+ background-color: antiquewhite;
+ border: 10px solid #630a10d3;
+ padding-bottom: 30px;
+}
+.food-pic{height: 100%;}
+.caldereta-text{font: 400 12px Roboto Condensed;}
+.see-recipe{
+  padding: 1% 5%;
+}
+
+@media (max-width: 1006px){
+  .section2-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0px;
+  }
+  .section2-col{
+    width: 100%;
+    height: 50%;
+  }
+  .section2-card{
+    width: 100%;
+    height: 50%;
+  }
+  .section2-cardbody{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2-foodpic{
+    height: 50%;
+    width: 50%;
+  }
+  .section2-cardInfo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+}

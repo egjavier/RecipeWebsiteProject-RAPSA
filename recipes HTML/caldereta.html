@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/landing-page.css">
+  <link rel="stylesheet" href="../styles/section2.css">
+  <link rel="stylesheet" href="../styles/section3.css">
+  <link rel="stylesheet" href="../styles/section4.css">
+  <link rel="stylesheet" href="../styles/section5.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html" title="Recipe Website Project">RAPSA</a>
+      <ul class="tabs-container">
+        <li  class="navbar-tabs"><a class="navbar-tabs home" href="../index.html">Home</a></li>
+        <li class="navbar-tabs"><a id="categories" class="navbar-tabs" href="#">Categories</a></li>
+        <li class="navbar-tabs"><a id="about" class="navbar-tabs" href="../about.html">About</a></li>
+        <li class="navbar-tabs"><a id="about" class="navbar-tabs" href=" " onclick="popUp()">Community</a></li>
+        <div class="search-container">
+          <input  placeholder="Search recipe"  type="search">
+          <a id="search" class="search-button" href=" " role="button" onclick="popUp()">Search</a>        
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <div id="recipe-body">
+    <div id="recipe-container" class="container">
+      <div class="recipe-title-container" >
+      <h1 class="recipe-title food">CALDERETA</h1>
+      <h4 class="recipe-title "><a class="chef" target="_blank" href="https://www.casabaluartefilipinorecipes.com/">
+        CASA BALUARTE FILIPINO RECIPES
+      </a></h4>
+      </div> <br>
+
+      <div class="recipe-info-container">
+        <div class="ingredients-container">
+          <h5 class="recipe-info">INGREDIENTS:</h5>
+          <ul>
+            <li>2 lbs beef chuck or any beef cut with at least 20% fat</li>
+            <li>4 cups water</li>
+            <li>3 tbsp canola oil</li>
+            <li>1 medium potato, cut into bite size pieces</li>
+            <li>1 large carrot, cut into bite size pieces</li>
+            <li>5 cloves of garlic, chopped</li>
+            <li>1 large onion, sliced</li>
+            <li>1/2 cup chopped pork liver or liver spread (pate)</li>
+            <li>1 tbsp soy sauce</li>
+            <li>1/2 tsp ground black pepper</li>
+            <li>2 bay leaves</li>
+            <li>1 tbsp sugar</li>
+            <li>1/2 tsp salt or to taste</li>
+            <li>1 cup tomato sauce</li>
+            <li>1 cup beef broth (from boiling the beef)</li>
+            <li>1 medium red bell pepper, sliced</li>
+            <li>1/2 cup snow peas</li>
+          </ul>
+
+          <div class="comment-section">
+            <h5>HOW WAS IT?</h5>
+            <form action="#">
+              <label for="fname">NAME</label>
+              <br>
+              <input type="text" class="box name" name="firstname" placeholder="Type your name here...">
+              <br><br>
+              <label for="subject">Comment</label> <br>
+              <textarea id="subject" class="box comment" placeholder="Write something.."></textarea>
+              <br><br>
+              <button href="#" class="search-button submit" onclick="showPopup()">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="instruction-container">
+          <a href="https://www.casabaluartefilipinorecipes.com/2019/07/beef-kaldereta.html" target="_blank">
+          <img title="See Website"  class="meal-pic" src="../images/Caldereta.jpg" alt="beef-kaldereta image"> 
+          </a> <br><br>
+          <h5 class="recipe-info">INSTRUCTION:</h5>
+          <ol>
+            <li>Using a pressure cooker or an Instant Pot, add water and beef. Cook for 15-20 minutes or until beef is tender. Remove beef from broth and save a cup for later use.</li> 
+            .<li>In a deep pan, heat and add canola oil. Cook potatoes for few minutes. Add carrots and cook for few more minutes. Remove and set aside</li>
+            <li>Using the same pan, Saute garlic and onion until limp. Add chopped liver and cook for few minutes. Add boiled beef and stir. Cook for few minutes. Season with soy sauce, ground pepper, and stir. Add bay leaves and return fried potatoes and carrots to the pan. Stir and add sugar and salt to taste.</li> 
+            <li>Pour-in tomato sauce and beef broth. Stir well to combine all ingredients. Add bell peppers and cover pan. Simmer for 10-15 minutes or until sauce starts to thickens. Add more broth or water if needed.</li> 
+            <li>Taste to see if more salt or fish sauce is needed. Add snow peas to the pan and stir gently. Allow to cook for few minutes. Turn off the heat and serve hot with steamed rice. Enjoy!</li> 
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function popUp() {
+      alert(`
+      I apologize. This page is still under construction. 
+  
+      Thank you for understanding.
+  `);
+    }
+    function emailNotAvailble() {
+      alert(`
+      I apologize. This page is still under construction.
+
+      But you can email me at yunisjavier@yahoo.com.
+  
+      Thank you for understanding.
+  `);
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function showPopup() {
+    alert(`
+    I apologize. I am currently working on adding a comment section on the website.
+
+    In the meantime, please click on the Food image to leave your thoughts about the recipe. 
+
+    Thank you.
+`);
+  }
+</script>
+</body>

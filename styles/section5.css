@@ -1,0 +1,49 @@
+.section5{
+  height: 70vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #911F27;  
+  padding-right: 50px;
+}
+.about-image{
+  height: 70%;
+  border: 3px solid antiquewhite;
+}
+.about-text{
+  color: antiquewhite;
+  font: 400 20px roboto condensed;
+  padding: 0 100px;
+  line-height: 40px;
+  text-align: center;
+}
+#know-more {
+  background-color: #911F27;
+  color: antiquewhite;
+  font: 700 30px Bebas Neue;
+  padding: 10px 8px;
+  border: 5px solid antiquewhite;
+}
+#know-more:hover{color: #FACE7F;}
+#know-more:active{ color: #911F27}
+#knowMore-container{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  .section5{
+    flex-direction: column;
+    padding: 10% 2%;
+    height: auto;
+  }
+  .about-image{
+    width: 50%;
+  }
+  .about-text{
+    font: 400 20px roboto condensed;
+    padding: 5% 2%;
+    line-height: 40px;
+    text-align: center;
+  }
+}
